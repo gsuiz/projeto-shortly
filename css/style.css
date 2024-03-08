@@ -6,6 +6,11 @@
     outline: 0;
 }
 
+@font-face {
+    font-family:raleway;
+    src: url(../font/raleway/Raleway-Bold.ttf);
+}
+
 html{
     height: 100%;
     font-family: poppins, sans-serif;
@@ -75,6 +80,7 @@ header{
     display: flex;
     margin: auto;
     width: 80%;
+    min-height: 50vh;
     align-items:center;
     padding:3% 0
 }
@@ -101,7 +107,7 @@ header{
     margin-top: 5%;
     width: 30%;
     height: 3vw;
-    min-height: 30px;
+    min-height: 34px;
     background-color:hsl(180, 66%, 49%);
     border-radius: 20px;
     border:0;
@@ -127,7 +133,7 @@ header{
 .container-form{
     width: 70%;
     height: 150px;
-    background: hsl(260, 8%, 14%) url(../images/bg-shorten-desktop.svg) center center;
+    background: hsl(255, 11%, 22%) url(../images/bg-shorten-desktop.svg) center center;
     background-size:cover;
     margin:5% auto;
     border-radius: 15px;
@@ -136,7 +142,6 @@ header{
     display:flex;
     justify-content: center;
     align-items: center
-
 }
 
 .container-form input{
@@ -146,7 +151,7 @@ header{
     border:0;
     padding: 0 2%;
     box-sizing: border-box;
-    font:1em poppins;
+    font:1em poppins, sans-serif;
 }
 
 .container-form button{
@@ -157,21 +162,24 @@ header{
     background-color:hsl(180, 66%, 49%);
     border:0;
     color: white;
-    font:bold 1em poppins;
+    font:bold 0.9em poppins;
     cursor:pointer;
 }
 
 .container-2__text{
-    width: 35%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 
 .container-2__text h1{
     font-size: 2.5em;
+    line-height: 44px;
 }
 
 .container-2__text p{
+    width: 35%;
+    margin:1.5vw auto;
     color:hsl(0, 1%, 50%);
 }
 
@@ -183,14 +191,40 @@ header{
 
 .stats__content{
     width: 22%;
-    padding: 2%;
+    padding:50px 2%;
     box-shadow: 0px 0px 3px rgba(148, 146, 146, 0.4);
     border-radius: 7px;
     background-color: white;
+    margin: 8% 0;
+    position: relative;
+}
+
+.stats__content p strong{
+    font-size: 1.3em;
+    color:black;
+    margin-bottom: 8%
 }
 
 .stats__content p{
-    
+    color: hsl(0, 1%, 50%);
+    margin: 3% 0;
+}
+
+.stats__content .wheel-img{
+    background-color: hsl(260, 8%, 14%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+}
+
+.stats__content img{
+    width: 40px;
+    object-fit: contain;
 }
 
 .stats--2{
@@ -201,4 +235,102 @@ header{
 .stats--3{
     position: relative;
     top: 70px;
+}
+
+.container-3{
+    width: 100%;
+    height: 25vh;
+    background: hsl(255, 11%, 22%) url(../images/bg-boost-desktop.svg) center center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-3 h1{
+    color: white;  
+    font-size:2em;
+    margin-bottom: 40px;
+}
+
+.container-3 .btn{
+    width: 150px;
+    height: 40px;
+    min-height: 34px;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 20px;
+    border:0;
+    color: white;
+    font: bold 0.9em poppins, sans-serif;
+    cursor: pointer;
+    position: relative;
+    bottom: 25px;
+}
+
+.btn{
+    transition: scale 0.4s;
+}
+
+.btn:hover{
+    scale: 0.8;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding:5% 8%;
+    background-color: hsl(260, 8%, 14%);
+}
+
+.footer-logo .logo-text{
+    position: relative;
+    bottom: 10px;
+    font-family:raleway;
+    font-size: 2.1em;
+    color: white;
+}
+
+.footer-boxlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.boxlist__content li{
+    list-style: none;
+    font-weight: 300;
+    margin: 6px 0;
+}
+
+.boxlist__content li:first-of-type{
+    margin-bottom: 15px;
+}
+
+.boxlist__content li strong a{
+    font-weight: 700;    
+}
+
+.boxlist__content li a{
+    color:white
+}
+
+.boxlist__content li a:hover{
+    color:#2acfcf
+}
+
+.footer-list__icons{
+    display: flex;
+    gap: 1.3em;
+    list-style: none;
+}
+
+.footer-list__icons li a{
+    color: white;
+    font-size: 22px;
+}
+
+.footer-list__icons li a:hover{
+    color: #2acfcf;
 }
