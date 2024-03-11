@@ -190,7 +190,6 @@ header{
 .container-2__stats{
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
 }
 
 .stats__content{
@@ -201,6 +200,13 @@ header{
     background-color: white;
     margin: 8% 0;
     position: relative;
+}
+
+.stats__line{
+    background-color: #2acfcf;
+    width: 2%;
+    height:7px;
+    margin: 250px 0;
 }
 
 .stats__content p strong{

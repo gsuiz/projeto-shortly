@@ -42,7 +42,7 @@
      .container-1__img picture img{
         width: 125%;
         position: relative;
-        margin-left:-78px;
+        margin-left:-9.8vw;
      }
      .container-1__text{
         align-items: center;
@@ -56,6 +56,10 @@
     }
     .container-2__stats{
         flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .stats__line{
+        display: none;
     }
     .stats__content{
         width:35%;
@@ -153,10 +157,10 @@
             width: 80%;
         }
         .container-2__stats{
+            margin: 100px 0 60px 0;
             flex-direction: column;
             align-items: center;
-            margin: 60px 0;
-            gap: 4em;
+            gap: 0;
         }
         .stats__content{
             width: 84%;
@@ -164,7 +168,12 @@
             flex-direction:column;
             align-items: center;
             text-align: center;
-            padding-bottom: 25px;
+            margin: 0;
+        }
+        .stats__line{
+            display: inline-block;
+            margin: 0;
+            height: 80px;
         }
         .stats__content p{
             width: 88%;
