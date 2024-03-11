@@ -26,6 +26,7 @@
     <div class="login">
       <a href="">Login</a>
       <button class="btn">Sign Up</button>
+      <i class="fa-solid fa-bars"></i>
     </div>
   </header>
 
@@ -41,7 +42,11 @@
         <button class="btn-starded btn">Get Started</button>
       </div>
       <div class="container-1__img">
-        <img src="images/illustration-working.svg" class="img__person">
+        <picture>
+          <source media="(max-width:850px)" srcset="images/illustration-working__tablet.png" type="image/png">
+          <source media="(max-width:767px)" srcset="images/illustration-working__mobile.png" type="image/png"> 
+          <img src="images/illustration-working.svg" >
+        </picture>
       </div>
     </section>
 
